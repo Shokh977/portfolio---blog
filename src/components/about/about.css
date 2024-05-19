@@ -1,0 +1,125 @@
+.about {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me h1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+}
+.about-me p {
+  max-width: 500px;
+  width: 100%;
+  font-weight: 400px;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(230, 230, 230, 0.434);
+}
+.about-me span {
+  color: #194bfd;
+}
+.img-txt {
+  display: flex;
+  gap: 150px;
+}
+.img-txt img {
+  border-radius: 57px;
+  width: 147px;
+  height: 151px;
+}
+.txt {
+  border-radius: 16px;
+  padding: 45px 85px;
+  max-width: 780px;
+  width: 100%;
+  height: 386px;
+  background: #121216;
+}
+.txt p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.txt button {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 29px;
+  padding: 8px 18px;
+  background: linear-gradient(140deg, #194bfd 0%, #ad13fb 100%);
+  margin-top: 30px;
+}
+.txt button:hover {
+  background: linear-gradient(120deg, #1842da 20%, #7f13b6 100%);
+}
+.stack {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #cbcbcb;
+  margin-top: 50px;
+}
+.about-me .box-shaped {
+  position: absolute;
+  left: 170px;
+  bottom: -160px;
+}
+.about-circle {
+  padding: 60px;
+  position: absolute;
+  bottom: -720px;
+  right: 140px;
+}
+@media screen and (max-width: 1024px) {
+  .img-txt {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: scroll;
+  }
+  .about {
+    height: 100%;
+  }
+  
+  .txt button {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .txt p, .stack {
+    text-align: center;
+  }
+  .about-me .box-shaped {
+    display: none;
+  }
+  .about-circle {
+    padding: 60px;
+    position: absolute;
+    bottom: -570px;
+    right: 240px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-circle {
+    padding: 60px;
+    position: absolute;
+    bottom: -370px;
+    right: 240px;
+  }
+  .txt {
+    height: 70%;
+    padding: 10px;
+    width: 350px;
+  }
+}

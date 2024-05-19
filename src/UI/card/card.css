@@ -1,0 +1,31 @@
+.card {
+  border-radius: 16px;
+  width: 294px;
+  height: 330px;
+  background: #d9d9d9;
+}
+.card-content {
+  padding: 10px 24px;
+}
+.card img {
+  border-radius: 14px;
+  width: 294px;
+  height: 150px;
+}
+.card h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  line-height: 1.14;
+  padding-bottom: 10px;
+  color: #000;
+}
+.card p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  line-height: 1.14;
+  color: #000;
+}

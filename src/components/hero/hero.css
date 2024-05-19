@@ -1,0 +1,146 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 180px;
+}
+.hero-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-txt h1 {
+  font-family: var(--font3);
+  font-weight: 500;
+  font-size: 48px;
+}
+.hero-txt span {
+  font-weight: 700;
+  color: #194bfd;
+}
+.frontend span {
+  font-weight: 400;
+  color: #9c1ed6;
+}
+.circle {
+  position: absolute;
+  top: 223px;
+  left: 100px;
+}
+.box {
+  position: absolute;
+  left: 576px;
+  top: 170px;
+}
+.hero-txt button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 29px;
+  padding: 12px 18px;
+  background: linear-gradient(140deg, #194bfd 0%, #ad13fb 100%);
+}
+.hero-txt button:hover {
+  background: linear-gradient(120deg, #1842da 20%, #7f13b6 100%);
+}
+.hero-right {
+  position: relative;
+}
+.hero-img {
+  padding: 1px;
+  border-radius: 16px;
+  width: 463px;
+  height: 314px;
+  box-shadow: 3px -4px 47px 1px #203eac;
+  transition: transform 0.5s ease;
+}
+.hero-img:hover {
+  transform: rotate(-10deg);
+  box-shadow: 3px -4px 47px 1px #194bfd;
+}
+.social-icons {
+  display: none;
+  top: 0;
+  left: 0;
+}
+.hero-img:hover + .social-icons {
+  display: block;
+}
+
+.social-icons img {
+  width: 70px;
+  height: 70px;
+}
+.github {
+  background-color: azure;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: -40px;
+  left: -90px;
+  right: 0;
+  transform: rotate(24deg);
+}
+
+.instagram {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  transform: rotate(-13deg);
+}
+
+.youtube {
+  position: absolute;
+  right: 50px;
+}
+.linked-in {
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-txt {
+    text-align: center;
+  }
+  .box {
+    position: absolute;
+    left: 300px;
+    top: 450px;
+  }
+  .circle {
+    position: absolute;
+    top: 223px;
+    left: 110px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-txt button {
+    margin-top: 5rem;
+    width: 80%;
+  }
+  .hero-img {
+    width: 363px;
+    height: 214px;
+  }
+
+  .hero-img:hover + .social-icons {
+    display: none;
+  }
+
+  
+}
+
+@media screen and (max-width: 350px) {
+  .hero-img {
+    display: none;
+  }
+}

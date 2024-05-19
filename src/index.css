@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "Space Grotesk", sans-serif;
+  --second-family: "Raleway", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Outfit", sans-serif;
+}
+body {
+  background-color: #0A0A0C;
+  color: white;
+  /* overflow: hidden; */
+}
+
+.container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 7rem; */
+  align-items: center;
+  padding: 150px 50px;
+  max-width: 1245px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content {
+  text-align: center;
+}

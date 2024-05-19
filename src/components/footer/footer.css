@@ -1,0 +1,150 @@
+.footer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  z-index: -10;
+  position: relative;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 170px;
+  background-image: url("../../assets/img.jpg");
+  background-position: center;
+  background-size: 110%;
+}
+
+.banner::after {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: #e6e6e6;
+}
+.banner p {
+  font-weight: 400;
+  width: 250px;
+  font-size: 14px;
+  color: rgba(230, 230, 230, 0.51);
+}
+.banner button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 29px;
+  padding: 12px 18px;
+  width: 215px;
+  height: 40px;
+  background: linear-gradient(140deg, #194bfd 0%, #ad13fb 100%);
+}
+.banner button:hover {
+  background: linear-gradient(140deg, #194afda9 0%, #ae13fbb0 100%);
+}
+.plane {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.plane img {
+  width: 85px;
+  height: 85px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-con {
+  width: 1000px;
+  width: 100%;
+  display: flex;
+  gap: 20rem;
+}
+.copy::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #171719;
+  margin-bottom: 1rem;
+}
+.contact {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(230, 230, 230, 0.51);
+}
+.contact p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+.copy {
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(230, 230, 230, 0.51);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    z-index: -10;
+    padding: 1.5rem;
+  }
+  .plane img,
+  .plane p {
+    display: none;
+  }
+  .plane {
+    height: 300px;
+  }
+
+  .footer-con {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .banner button {
+    margin: 1rem;
+  }
+}
